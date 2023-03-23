@@ -6,7 +6,7 @@ cryptInfo();
 var error = 0
 var check = 0
 var index = [".", "/", "https//:"]
-while (check != 3) {
+while (check != 2) {
   if (location.href.includes(index[0])) {
     check++
   } else {
@@ -15,7 +15,9 @@ while (check != 3) {
   }
 }
 if (error > 0) {
-  alert("Failed! Site is invalid or not supported. ERR:1");
+  alert("Failed! Site is invalid or not supported!");
+  console.log("E" + error + " - C" + check + " - I(" + index[0] + " " + index[1] + " " + index[2] + ")");
 } else {
-  alert("Success! Website is valid. NOERR:1");
+  alert("Success! Website is valid!");
+  console.log("E" + error + " - C" + check + " - I(" + index[0] + " " + index[1] + " " + index[2] + ")");
 }
