@@ -7,7 +7,7 @@ var error = 0
 var check = 0
 var index = [".", "/", "https//:"]
 while (check != 2) {
-  if (location.href.includes(index[0])) {
+  if (location.href.includes(index[check])) {
     check++
   } else {
     error++
