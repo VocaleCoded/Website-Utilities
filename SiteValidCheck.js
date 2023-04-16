@@ -1,8 +1,6 @@
-function cryptInfo() {
-  let extraHelp1 = prompt("What's your username");
-  let inputCryptInfo = "Device:" + navigator.userAgent + " Platform:" + navigator.platform + " User:" + extraHelp1;
-}
-cryptInfo();
+let extraHelp1 = prompt("What's your username");
+let inputCryptInfo = "Device:" + navigator.userAgent + " Platform:" + navigator.platform + " User:" + extraHelp1;
+console.log(inputCryptInfo);
 var error = 0
 var check = 0
 var index = [".", "/", "https//:"]
