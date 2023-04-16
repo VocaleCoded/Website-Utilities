@@ -7,12 +7,13 @@ index.push(".");
 index.push("https://");
 console.log("Ready to check");
 console.log("-----------------------------");
-while (check != 3)
-if (location.href.includes(index[check])) {
-    check++
-} else if (!location.href.includes(index[check])) {
-    check++
-    error++
+while (check != 3) {
+    if (location.href.includes(index[check])) {
+        check++
+    } else if (!location.href.includes(index[check])) {
+        check++
+        error++
+    }
 }
 if (error > 0) {
     alert("Failed! Your domain is suspicious..!");
