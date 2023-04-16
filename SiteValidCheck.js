@@ -1,21 +1,22 @@
-let extraHelp1 = prompt("What's your username");
-let inputCryptInfo = "Device:" + navigator.userAgent + " Platform:" + navigator.platform + " User:" + extraHelp1;
-console.log(inputCryptInfo);
-var error = 0
-var check = 0
-var index = [".", "/", "https//:"]
-while (check != 2) {
-  if (location.href.includes(index[check])) {
+alert("By clicking 'OK', you accept that we will go throught your full URL. Are you sure? (Reset if no)");
+let check = 0
+let index = []
+let error = 0
+index.push("/");
+index.push(".");
+index.push("https://");
+console.log("Ready to check");
+console.log("-----------------------------");
+while (check != 3)
+if (location.href.includes(index[check])) {
     check++
-  } else {
+} else if (!location.href.includes(index[check])) {
+    check++
     error++
-    check++
-  }
 }
 if (error > 0) {
-  alert("Failed! Site is invalid or not supported!");
-  console.log("E" + error + " - C" + check + " - I(" + index[0] + " " + index[1] + " " + index[2] + ")");
-} else {
-  alert("Success! Website is valid!");
-  console.log("E" + error + " - C" + check + " - I(" + index[0] + " " + index[1] + " " + index[2] + ")");
+    alert("Failed! Your domain is suspicious..!");
+} else if (error = 0) {
+    alert("Success! Your domain is verified!");
 }
+console.log("C" + check + " - E" + error);
