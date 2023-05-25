@@ -1,4 +1,4 @@
-javascript:(function() {
+(function() {
     alert("Please click 'OK' to proceed");
 
     function getDomain(url) {
