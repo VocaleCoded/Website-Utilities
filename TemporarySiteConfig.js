@@ -8,11 +8,12 @@
 
   var timeout = setTimeout(function() {
     alert('Failed to launch the script within 6 seconds.');
+    return; // Exit the entire script
   }, 6000);
 
   script.onload = function() {
     clearTimeout(timeout);
     alert('Launched script (scripts by CoderBoyCodes on Github)');
+    // 69
   };
 })();
-
