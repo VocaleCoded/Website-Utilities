@@ -16,3 +16,8 @@ throughout making an element, when clicked, show up a
 inspect tab and you can configure the element code, but
 as soon as you reload, the edits vanish. This can be
 useful in pranking too!
+
+## ViewSourceCode.js
+This script can make you view the inner elements
+of a site or file! It's useful for understanding
+functionalities of a site!
